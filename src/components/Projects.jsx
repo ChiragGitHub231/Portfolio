@@ -84,7 +84,7 @@ const Projects = () => {
   const displayedProjects = getVisibleProjects();
 
   return (
-    <section id="projects" className="py-8 sm:py-20 bg-[#0f172a] text-white scroll-mt-4">
+    <section id="projects" className="py-8 sm:py-20 bg-[#0f172a] text-white scroll-mt-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl h-12 font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
