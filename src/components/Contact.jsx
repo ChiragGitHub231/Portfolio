@@ -1,5 +1,5 @@
-import React from 'react';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import React from "react";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -21,7 +21,12 @@ const Contact = () => {
               <Phone size={32} />
             </div>
             <h3 className="text-xl font-semibold mb-2">Phone</h3>
-            <p className="text-gray-300">+91 88491 30900</p>
+            <a
+              href="tel:+918849130900"
+              className="text-gray-300"
+            >
+              +91 88491 30900
+            </a>
           </div>
 
           {/* Email Card */}
@@ -30,7 +35,12 @@ const Contact = () => {
               <Mail size={32} />
             </div>
             <h3 className="text-xl font-semibold mb-2">Email</h3>
-            <p className="text-gray-300">chiragbhundiya433@gmail.com</p>
+            <a
+              href="mailto:chiragbhundiya433@gmail.com"
+              className="text-gray-300"
+            >
+              chiragbhundiya433@gmail.com
+            </a>
           </div>
 
           {/* Address Card */}

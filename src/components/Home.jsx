@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import Image2 from '../assets/image2.jpg';
+import React, { useEffect, useState } from "react";
+import Image2 from "../assets/image2.jpg";
 
 const Home = () => {
   const lines = [
     "Passionate Software Engineer",
-    "Full Stack Developer", 
+    "Full Stack Developer",
     "Quick Learner",
   ];
 
@@ -38,7 +38,8 @@ const Home = () => {
             {/* Container for cycling text */}
             <div className="relative h-8 sm:h-10 md:h-12 lg:h-16 overflow-hidden w-full">
               {lines.map((line, idx) => {
-                const prevIndex = (visibleIndex === 0) ? lines.length - 1 : visibleIndex - 1;
+                const prevIndex =
+                  visibleIndex === 0 ? lines.length - 1 : visibleIndex - 1;
 
                 let translateY = 20;
                 let opacity = 0;
@@ -66,6 +67,17 @@ const Home = () => {
                 );
               })}
             </div>
+
+            {/* Download CV Button */}
+            <div>
+              <a
+                href="./Chirag_Bhundiya.pdf"
+                download
+                className="inline-block px-6 py-3 text-white font-semibold bg-gradient-to-r from-blue-500 to-purple-500 rounded-full hover:scale-105 hover:shadow-lg transition-transform duration-300"
+              >
+                Download CV
+              </a>
+            </div>
           </div>
 
           {/* Right side - Avatar */}
@@ -76,15 +88,18 @@ const Home = () => {
                 alt="Chirag Bhundiya"
                 className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 rounded-full object-cover shadow-2xl opacity-0 animate-fadeIn border-4 border-white/10"
                 style={{
-                  animationFillMode: 'forwards',
-                  animationDuration: '1s',
-                  animationTimingFunction: 'ease-in-out',
-                  animationDelay: '1.2s',
+                  animationFillMode: "forwards",
+                  animationDuration: "1s",
+                  animationTimingFunction: "ease-in-out",
+                  animationDelay: "1.2s",
                 }}
               />
               {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-500 rounded-full opacity-70 animate-pulse"></div>
-              <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-purple-500 rounded-full opacity-50 animate-pulse" style={{animationDelay: '0.5s'}}></div>
+              <div
+                className="absolute -bottom-6 -left-6 w-12 h-12 bg-purple-500 rounded-full opacity-50 animate-pulse"
+                style={{ animationDelay: "0.5s" }}
+              ></div>
             </div>
           </div>
         </div>
